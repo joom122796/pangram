@@ -1,8 +1,8 @@
 def pangram(entry):
   Pangram = False
   alphabet = 'abcdefghijklmnopqrstuvwxyz'
-  for zq in alphabet:
-    if zq in entry.lower():
+  for i in alphabet:
+    if i in entry.lower():
       Pangram = True
       print(f'The entry was: {entry}')
       print(f'Pangram = {Pangram}')
