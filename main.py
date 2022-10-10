@@ -1,17 +1,11 @@
 def pangram(entry):
-  Pangram = False
   alphabet = 'abcdefghijklmnopqrstuvwxyz'
   for i in alphabet:
     if i in entry.lower():
       Pangram = True
-      print(f'The entry was: {entry}')
-      print(f'Pangram = {Pangram}')
-      quit()
     else:
       Pangram = False
-      print(f'The entry was: {entry}')
-      print(f'Pangram = {Pangram}')
-      quit()
+  print(f'Pangram = {Pangram}')
 
-sent = input('Enter a sentence, the program will determine whether it is an angram or not. \nEntry: ')
+sent = input('Enter a sentence, the program will determine whether it is an pangram or not. \nEntry: ')
 pangram(sent)
